@@ -3,6 +3,7 @@ import Projects from "./Projects";
 import SocialProfiles from "./SocialProfiles";
 import Title from "./Title";
 import profile from "../assets/profile1.jpg";
+import Jokes from "./Jokes";
 
 class App extends Component {
   state = { displayBio: false };
@@ -37,6 +38,7 @@ class App extends Component {
         <Projects />
         <hr />
         <SocialProfiles />
+        <Jokes />
       </div>
     );
   }
