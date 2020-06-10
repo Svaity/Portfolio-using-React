@@ -3,7 +3,7 @@ import React, { Component } from "react";
 const TITLES = [
   "a Software Engineer",
   "a Virtual reality Game Developer",
-  "a Automation Engineer"
+  "a Automation Engineer",
 ];
 
 class Title extends Component {
@@ -13,12 +13,17 @@ class Title extends Component {
     console.log("Title Component is mounted");
     this.animateTitles();
   }
+  componentWillUnmount() {
+    console.log("Title componenet will unmount");
+
+    clearInterval(this.titleInterval);
+  }
 
   animateTitles = () => {
-    setInterval(() => {
+    this.titleInterval = setInterval(() => {
       const titleIndex = (this.state.titleIndex + 1) % TITLES.length;
       this.setState({ titleIndex });
-    }, 4000);
+    }, 3000);
   };
 
   render() {
