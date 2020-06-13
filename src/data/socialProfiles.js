@@ -7,23 +7,18 @@ const SOCIAL_PROFILES = [
   {
     id: 1,
     link: "https://svaity@stevens.edu",
-    image: emailIcon
+    image: emailIcon,
   },
   {
     id: 2,
     link: "https://github.com/Svaity",
-    image: githubIcon
+    image: githubIcon,
   },
   {
     id: 3,
     link: "https://linkedin.com/svaity",
-    image: linkedinIcon
+    image: linkedinIcon,
   },
-  {
-    id: 4,
-    link: "svaity@stevens.edu",
-    image: twitterIcon
-  }
 ];
 
 export default SOCIAL_PROFILES;

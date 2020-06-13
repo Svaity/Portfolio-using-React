@@ -29,7 +29,9 @@ class App extends Component {
     return (
       <div>
         <h2>Music Master</h2>
+        <hr />
         <Search searchArtist={this.searchArtist} />
+        <hr />
         <Artist artist={this.state.artist} />
         <Tracks tracks={this.state.tracks} />
       </div>
