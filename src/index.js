@@ -6,6 +6,7 @@ import "./index.css";
 import { Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
 import createBrowserHistory from "history/createBrowserHistory";
+import MusicMaster from "./projects/music-master";
 
 const history = createBrowserHistory();
 
@@ -26,6 +27,14 @@ ReactDOM.render(
         render={() => (
           <Header>
             <Jokes />
+          </Header>
+        )}
+      />
+      <Route
+        path="/music-master"
+        render={() => (
+          <Header>
+            <MusicMaster />
           </Header>
         )}
       />
